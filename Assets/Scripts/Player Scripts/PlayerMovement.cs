@@ -28,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if(Time.time > harvestTimer)
+        {
+            isHarvesting = false;
+        }
+
         FlipSprite();
     }
 
@@ -62,13 +67,16 @@ public class PlayerMovement : MonoBehaviour
             sr.flipX = true;
         }
     }
+    
+    public void HarvestStopMovement(float time)
+    {
+       isHarvesting = true;
+         harvestTimer = Time.time + time;
+    }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.CompareTag("Bush"))
-    //    {
-    //        Debug.Log("The value of fruit is: " + collision.gameObject.GetComponent<BushFruits>().HarvestFruit());
-    //    }
-    //}
+    public bool IsHarvesting()
+    {
+        return isHarvesting;
+    }
 
 }

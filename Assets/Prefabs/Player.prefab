@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4945696099635563196}
   - component: {fileID: 7403563758711749449}
   - component: {fileID: 3361116530732347795}
+  - component: {fileID: 5613532055108241373}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -194,7 +195,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d7a99668f1250e84090800692d05d569, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -323,3 +324,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fbb2b0bf2593c4ea232820d4fd790d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxNumberOfFruitsToStore: 50
+  currentNumberOfStoredFruits: 0
+--- !u!114 &5613532055108241373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7548447197751591990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b935c08949c80498d73bf2e328a8ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  harvestTime: 0.4
