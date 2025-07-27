@@ -4926,6 +4926,7 @@ GameObject:
   - component: {fileID: 7760019798589290429}
   - component: {fileID: 1282455935968532562}
   - component: {fileID: 7289760278878320926}
+  - component: {fileID: 7067488502812729724}
   m_Layer: 0
   m_Name: Artifact
   m_TagString: Artifact
@@ -5047,7 +5048,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6419c0b7fb1823040ba0235e95e7dbe7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5133,3 +5134,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7067488502812729724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5933379582328840702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25133de8f31c1841a1b6fa8754382ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 150
+  bleed: 2
