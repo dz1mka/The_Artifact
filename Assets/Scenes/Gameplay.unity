@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 843075124}
   - component: {fileID: 843075123}
   - component: {fileID: 843075122}
+  - component: {fileID: 843075127}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Wolf
@@ -434,6 +435,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &843075127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843075121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6b3e9a75d6f3747b493d2f1346d032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEater: 0
+  moveSpeed: 1
+  attackDamage: 5
+  attackTimeThreshold: 1
+  eatTimeThreshold: 2
+  bushMask:
+    serializedVersion: 2
+    m_Bits: 64
+  isMoving: 0
+  left: 0
 --- !u!1 &1636790917
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +470,7 @@ GameObject:
   - component: {fileID: 1636790920}
   - component: {fileID: 1636790919}
   - component: {fileID: 1636790918}
+  - component: {fileID: 1636790923}
   m_Layer: 0
   m_Name: Wolf Eater
   m_TagString: Wolf
@@ -609,6 +633,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636790923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636790917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6b3e9a75d6f3747b493d2f1346d032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEater: 0
+  moveSpeed: 1
+  attackDamage: 5
+  attackTimeThreshold: 1
+  eatTimeThreshold: 2
+  bushMask:
+    serializedVersion: 2
+    m_Bits: 64
+  isMoving: 0
+  left: 0
 --- !u!1 &2065699125
 GameObject:
   m_ObjectHideFlags: 0

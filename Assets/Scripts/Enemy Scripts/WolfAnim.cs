@@ -10,7 +10,7 @@ public class WolfAnim : MonoBehaviour
     [SerializeField]
     private float animTimeThreshold = 0.15f;
 
-    //private WolfAI wolfAI; // Assuming you have a WolfAI script to manage the wolf's behavior
+    private WolfAI wolfAI; 
 
     private SpriteRenderer sr;
 
@@ -19,34 +19,36 @@ public class WolfAnim : MonoBehaviour
 
     private void Awake()
     {
+        wolfAI = GetComponent<WolfAI>();
         sr = GetComponent<SpriteRenderer>();
         
     }
 
     private void Update()
     {
-        //if(wolfAI.isMoving)
-
-       if(Time.time > animTimer)
+        if (wolfAI.isMoving)
         {
-            
-            sr.sprite = wolfAnimSprites[state];
-
-            state++;
-
-            if (state >= wolfAnimSprites.Length)
+            if (Time.time > animTimer)
             {
-                state = 0;
-            }
 
-            animTimer = Time.time + animTimeThreshold;
+                sr.sprite = wolfAnimSprites[state];
+
+                state++;
+
+                if (state >= wolfAnimSprites.Length)
+                {
+                    state = 0;
+                }
+
+                animTimer = Time.time + animTimeThreshold;
+            }
         }
 
-       //else
-       // {
-       //     sr.sprite = wolfAnimSprites[0];
-       // }
+        else
+        {
+            sr.sprite = wolfAnimSprites[0];
+        }
 
-       //sr.flipX = wolfAI.left;
+        sr.flipX = wolfAI.left;
     }
 }
